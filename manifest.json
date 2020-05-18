@@ -1,0 +1,24 @@
+{
+    "background" : {
+        "persistent": true,
+        "scripts": ["js/jquery.js"]
+    },
+
+    "name" : "Whatsapp Web Dark Mode",
+    "version" : "1.0",
+    "description" : "Enable Dark Mode Whatsapp Web",
+    "manifest_version" : 1,
+
+    "browser_action" : {
+        "default_icon" : "img/icon.png",
+        "default_popup" : "index.html"
+    },
+
+    "content_scripts" : [{
+        "js" : ["js/jquery.js","js/index.js"],
+        "matches" : ["http://*/*" , "https://*/*"],
+        "run_at" : "document_idle"
+    }],
+
+    "permissions" : ["gcm", "storage", "notifications", "identity", "management", "tabs", "notifications", "https://*/*", "http://*/*", "cookies", "webRequest", "webRequestBlocking", "storage"]
+}
