@@ -15,5 +15,5 @@
         "run_at" : "document_idle"
     }],
 
-    "permissions" : ["gcm", "storage", "notifications", "identity", "management", "tabs", "notifications", "https://*/*", "http://*/*", "cookies", "webRequestBlocking", "storage"]
+    "permissions" : ["tabs","http://web.whatsapp.com/*" , "https://web.whatsapp.com/*"]
 }

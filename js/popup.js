@@ -2,9 +2,10 @@ enableDarkMode();
 
 function enableDarkMode(){
     document.addEventListener('DOMContentLoaded',function(){
-        var toggler = document.getElementById('toggle');
+        var darkToggler = document.getElementById('darkToggle');
+        var fullToggler = document.getElementById('fullToggle');
 
-        toggler.addEventListener('click',function(){
+        darkToggler.addEventListener('click',function(){
             chrome.tabs.executeScript( null, { file : 'js/jquery.min.js'}, function() {
                     chrome.tabs.executeScript( null, { file : 'js/dark.js'});
                 }
