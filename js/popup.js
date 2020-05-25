@@ -11,5 +11,13 @@ function enableDarkMode(){
                 }
             );
         });
+
+        fullToggler.addEventListener('click',function(){
+            chrome.tabs.executeScript( null, { file : 'js/jquery.min.js'}, function() {
+                    chrome.tabs.executeScript( null, { file : 'js/full.js'});
+                }
+            );
+        });
+
     });
 }
